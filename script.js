@@ -2,8 +2,9 @@ const dropdownMenu = document.querySelector('.nav');
 const dropdownNavList = document.querySelector('.nav-list');
 const dropdownLogo = document.querySelector('.logo');
 const hamburgerChange = document.querySelector('.hamburger .fas');
+const dropdownFoldout = document.querySelector('.nav-list-foldout');
 
-console.log(hamburgerChange);
+
 
 const dropdownRotated = document.querySelector('.nav-item.rotated');
 
@@ -17,4 +18,5 @@ menuButton.addEventListener('click', function(){
     dropdownLogo.classList.toggle('foldout');
     dropdownRotated.classList.toggle('foldout');
     hamburgerChange.classList.toggle('fa-times');
+    dropdownFoldout.classList.toggle('foldout');
 });
