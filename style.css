@@ -37,18 +37,22 @@ body {
 .nav.foldout {
     width: 30rem;
     z-index: 999;
-    background: rgba(70, 70, 70, 1);
-    animation: width .3s linear forwards;
+    background: rgba(70, 70, 70, .98);
+    animation: foldout .3s linear forwards;
     transform: scaleX(0);
     transform-origin: left;
 
 }
 
-@keyframes width {
-    from {
+@keyframes foldout {
+    0% {
         transform: scaleX(0);
+        background: rgba(70, 70, 70, .6);
     }
-    to {
+    50% {
+        background: rgba(70, 70, 70, .75);
+    }
+    100% {
         transform: scaleX(1);
     }
 }
@@ -90,7 +94,6 @@ body {
 
 .nav-item .logo {
     opacity: 1;
-
     color: white;
     font-size: 4rem;
     margin-top: 5rem;
