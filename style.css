@@ -38,7 +38,7 @@ body {
     background: rgba(70, 70, 70, 0.6);
     box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.65);
     transition: width 1s ease-in;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 /* FOLDOUT CLASS OP NAV, NAV-LIST, LOGO, HAMBURGER */
@@ -271,6 +271,8 @@ body {
 /* MEDIAQUERIES */
 
 @media screen and (max-width: 870px) {
+  
+    
     .container {
         display: flex;
         flex-flow: column;
@@ -305,6 +307,7 @@ body {
         transform: rotate(0deg);
         margin: 2rem 0 2rem 0;
         width: 400px;
+        text-align: center;
     }
 
     .nav-list-foldout {
