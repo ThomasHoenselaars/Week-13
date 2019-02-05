@@ -1,15 +1,17 @@
-var dropdownMenu = document.querySelector('.nav');
-var dropdownNavList = document.querySelector('.nav-list');
-var dropdownLogo = document.querySelector('.logo');
-var dropdownHamburger = document.querySelector('.hamburger');
-var dropdownRotated = document.querySelector('.nav-item.rotated');
+const dropdownMenu = document.querySelector('.nav');
+const dropdownNavList = document.querySelector('.nav-list');
+const dropdownLogo = document.querySelector('.logo');
+const dropdownHamburger = document.querySelector('.hamburger');
+const dropdownRotated = document.querySelector('.nav-item.rotated');
+const dropdownCloseMenu = document.querySelector('.close-menu');
 
-var menuButton = document.querySelector('.hamburger');
+const menuButton = document.querySelector('.hamburger');
 
 menuButton.addEventListener('click', function(){
-  dropdownMenu.classList.toggle('foldout');
-  dropdownNavList.classList.toggle('foldout');
-  dropdownLogo.classList.toggle('foldout');
-  dropdownHamburger.classList.toggle('foldout');
-  dropdownRotated.classList.toggle('foldout');
+    dropdownMenu.classList.toggle('foldout');
+    dropdownNavList.classList.toggle('foldout');
+    dropdownLogo.classList.toggle('foldout');
+    dropdownHamburger.classList.toggle('foldout');
+    dropdownRotated.classList.toggle('foldout');
+    dropdownCloseMenu.classList.toggle('foldout');
 });

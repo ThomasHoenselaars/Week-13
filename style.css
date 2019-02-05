@@ -90,7 +90,20 @@ body {
 .hamburger.foldout {
     align-self: flex-end;
     margin-right: 3rem;
+    animation: rotation 1s linear forwards;
 }
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: rotate(360deg);
+        /* opacity: 0; */
+    }
+}
+
 
 .nav-item .logo {
     opacity: 1;
