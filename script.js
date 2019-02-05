@@ -3,7 +3,8 @@ const dropdownNavList = document.querySelector('.nav-list');
 const dropdownLogo = document.querySelector('.logo');
 const dropdownHamburger = document.querySelector('.hamburger');
 const dropdownRotated = document.querySelector('.nav-item.rotated');
-const dropdownCloseMenu = document.querySelector('.close-menu');
+
+
 
 const menuButton = document.querySelector('.hamburger');
 
@@ -13,5 +14,4 @@ menuButton.addEventListener('click', function(){
     dropdownLogo.classList.toggle('foldout');
     dropdownHamburger.classList.toggle('foldout');
     dropdownRotated.classList.toggle('foldout');
-    dropdownCloseMenu.classList.toggle('foldout');
 });
