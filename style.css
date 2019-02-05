@@ -10,6 +10,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 
 
 body {
@@ -205,6 +210,31 @@ body {
     right: -16rem;
 }
 
+/* MOBILE MENU */
+
+.mobile-menu {
+    position: absolute;
+    top: -20rem;
+    left: 0;
+
+    z-index: 10;
+    background: rgba(70, 70, 70, .98);
+    width: 100vw;
+    display: flex;
+}
+.nav-list-mobile {
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+
+.nav-list-mobile li {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
 .main-content {
     grid-column: 2;
 }
@@ -263,6 +293,9 @@ body {
         margin: 0 0 0 0;
     }
 
+    .hamburger {
+        display: none;
+    }
     .logo {
         display: none;  
     }
@@ -274,18 +307,6 @@ body {
         width: 400px;
     }
 
-
-    .nav.foldout {
-        
-        width: 100vw;
-        max-height: 8rem;
-        z-index: 10;
-        background: rgba(70, 70, 70, .98);
-        animation: foldout .3s linear forwards;
-        transform: scaleX(0);
-        transform-origin: top;
-    
-    }
     .nav-list-foldout {
         display: none;
     }
