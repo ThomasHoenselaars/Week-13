@@ -28,17 +28,46 @@ body {
 .nav {
     grid-column: 1;
     background: rgba(70, 70, 70, 0.6);
-    justify-content: space-evenly;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.65);
+    transition: width 1s ease-in;
+}
+
+/* FOLDOUT CLASS OP NAV, NAV-LIST, LOGO, HAMBURGER */
+
+.nav.foldout {
+    width: 30rem;
+    z-index: 999;
+    background: rgba(70, 70, 70, 1);
+    animation: width .3s linear forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+
+@keyframes width {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
 }
 
 .nav-list {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30rem;
+    
     margin: 0;
     padding: 0;  
 }
+
+.nav-list.foldout {
+    align-items: end;
+}
+
+
 
 .nav-item {
     color: white;
@@ -46,6 +75,7 @@ body {
 }
 
 .hamburger {
+    opacity: 1;
     color: white;
     font-size: 2rem;
     width: 2rem;
@@ -53,7 +83,14 @@ body {
     padding: 0;
 }
 
+.hamburger.foldout {
+    align-self: flex-end;
+    margin-right: 3rem;
+}
+
 .nav-item .logo {
+    opacity: 1;
+
     color: white;
     font-size: 4rem;
     margin-top: 5rem;
@@ -61,6 +98,11 @@ body {
     padding: 1rem;
 }
 
+.logo.foldout {
+    opacity: 0;
+    margin-left: 1.2rem;
+    pointer-events: none;
+}
 
 .nav-item.rotated {
     font-size: 1.4rem;
@@ -74,9 +116,10 @@ body {
     color: gold;
     font-weight: 900;
     padding: 1rem;
-    
-   
+}
 
+.nav-item.rotated.foldout {
+    margin-left: 8.3rem;
 }
 
 .main-content {
@@ -98,6 +141,8 @@ body {
     background: rgba(70, 70, 70, 0.6);
     padding: 1.4rem;
     margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.65);
 }
 
 .card .card-button {
