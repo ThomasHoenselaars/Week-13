@@ -275,7 +275,20 @@ body {
     }
 
 
+    .nav.foldout {
+        
+        width: 100vw;
+        max-height: 8rem;
+        z-index: 10;
+        background: rgba(70, 70, 70, .98);
+        animation: foldout .3s linear forwards;
+        transform: scaleX(0);
+        transform-origin: top;
+    
+    }
     .nav-list-foldout {
         display: none;
     }
+    
+    
 }
